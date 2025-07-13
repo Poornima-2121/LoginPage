@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(images/login-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  width: 25rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+h1 {
+  font-size: 30px;
+  font-weight: light;
+  background-image: linear-gradient(to right, #02a4f1, white);
+  -webkit-background-clip: text; /* For older webkit browsers */
+  background-clip: text;
+  color: transparent;
+}
+.welcome {
+  text-align: center;
+  color: #02a4f1;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+button {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: linear-gradient(to right, #02a4f1, #000038);
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(to right, #000038, #02a4f1);
+  transition-duration: background 0.5s ease;
+}
+input {
+  padding: 10px;
+  padding-left: 40px;
+  margin: 10px 0;
+  border: white 1px solid;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #02a4f1;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+form .forgot-password a {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  font-size: 14px;
+}
+form .forgot-password a:hover {
+  color: #02a4f1;
+  text-decoration: underline;
+}
+
+.fa-lock {
+  top: 38%;
+}
+.fa-user {
+  top: 16%;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  top: 38%;
+  left: 73%;
+  cursor: pointer;
+}
+
+i {
+  position: absolute;
+  left: 22%;
+  pointer-events: none;
+  color: #02a4f1;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  justify-content: flex-start;
+  color: white;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
+  padding: 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #02a4f1;
+  border-color: #02a4f1;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  position: absolute;
+  top: 54.9%;
+  left: 21.4%;
+  font-size: 13px;
+}
+
+#remember-me {
+  margin-right: 8px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 17rem;
+  }
+  button {
+    width: 100%;
+  }
+  .input {
+    width: 90%;
+  }
+  i {
+    left: 12%;
+  }
+  .fa-eye,
+  .fa-eye-slash {
+    left: 82%;
+  }
+  input[type="checkbox"]:checked::after {
+    top: 55%;
+    left: 23%;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="welcome">
+        <h1>Welcome</h1>
+      </div>
+      <form method="POST">
+        <input type="text" name="username" placeholder="USERNAME" /><i
+          class="fa-regular fa-user"
+        ></i>
+        <input type="password" name="password" placeholder="PASSWORD" /><i
+          class="fa-solid fa-lock"
+        ></i
+        ><i class="fa-solid fa-eye"></i><i class="fa-solid fa-eye-slash"></i>
+        <div class="remember-me">
+          <input
+            title="Remember Me"
+            type="checkbox"
+            name="remember-me"
+            id="remember-me"
+            checked
+          />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <button type="submit">LOGIN</button>
+        <p class="forgot-password">
+          <a href="#">Forgot Password?</a>
+        </p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
