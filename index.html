@@ -18,25 +18,28 @@
       <div class="welcome">
         <h1>Welcome</h1>
       </div>
-      <form method="POST">
-        <input type="text" name="username" placeholder="USERNAME" /><i
+      <form>
+        <input type="text" name="username" id="username" aria-label="Username" placeholder="USERNAME" /><i
           class="fa-regular fa-user"
         ></i>
-        <input type="password" name="password" placeholder="PASSWORD" /><i
+        <p class="error-message username-error"></p>
+        <input type="password" name="password" id="password" aria-label="Password" placeholder="PASSWORD" /><i
           class="fa-solid fa-lock"
         ></i
         ><i class="fa-solid fa-eye"></i><i class="fa-solid fa-eye-slash"></i>
+        <p class="error-message password-error"></p>
         <div class="remember-me">
           <input
             title="Remember Me"
             type="checkbox"
             name="remember-me"
             id="remember-me"
+            aria-label="Remember Me"
             checked
           />
           <label for="remember-me">Remember me</label>
         </div>
-        <button type="submit">LOGIN</button>
+        <button type="submit" id="login-button">LOGIN</button>
         <p class="forgot-password">
           <a href="#">Forgot Password?</a>
         </p>
